@@ -206,12 +206,11 @@
             ]
         }
     ],
-    //editor
-    "window.zoomLevel": 0.3, //1.5
+    "window.zoomLevel": 0.7, //1.5
     "files.autoSave": "onFocusChange",
     "editor.lineNumbers": "on",
     "workbench.startupEditor": "none",
-    "editor.fontSize": 19, //18
+    "editor.fontSize": 18, //18
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontLigatures": false,
     "editor.letterSpacing": 0.2,
@@ -221,6 +220,7 @@
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
     "editor.bracketPairColorization.enabled": true,
+    "editor.linkedEditing": true,
     "window.menuBarVisibility": "toggle",
     "security.workspace.trust.untrustedFiles": "open",
     // "breadcrumbs.enabled": false,
@@ -231,6 +231,12 @@
     "editor.renderWhitespace": "none",
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     //c/c++ intellisence
     "C_Cpp.autocomplete": "Disabled",
@@ -245,15 +251,14 @@
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.showExitAlert": false,
     "terminal.integrated.rightClickBehavior": "copyPaste",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.shellIntegration.enabled": false,
     //code runner
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.executorMap": {
         "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && cd $dir$fileNameWithoutExt",
         "cpp": "cd $dir && cppcompile $fileNameWithoutExt && rm -f $fileNameWithoutExt",
-        "python": "python3"
+        "python": "python3",
+        // "javascript": "node",
     },
     "files.saveConflictResolution": "overwriteFileOnDisk",
     //workbench
@@ -267,7 +272,18 @@
         "editorCursor.foreground": "#bbbaba",
         "terminalCursor.foreground": "#bbbaba",
     },
-    "workbench.iconTheme": "vs-nomo-dark",
-    "workbench.colorTheme": "Default Light+",
-    "workbench.activityBar.visible": false,
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.CustomBrowser": "chrome",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "emmet.excludeLanguages": [
+        "markdown",
+        "php"
+    ],
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.donotShowInfoMsg": true,
 }
