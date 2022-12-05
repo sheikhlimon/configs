@@ -53,14 +53,12 @@ _comp_options+=(globdots) # lets you tab complete hidden files by default
 # Composer Path laravel
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Load ; should be last
 source "$ZSH"/oh-my-zsh.sh
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
