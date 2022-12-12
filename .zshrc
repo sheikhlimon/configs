@@ -48,12 +48,7 @@ autoload -U compinit && compinit
 zmodload zsh/complist
 _comp_options+=(globdots) # lets you tab complete hidden files by default
 
-# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60' #auto suggest highlight
-
-# Composer Path laravel
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60' #auto suggest highlight
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
