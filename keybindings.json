@@ -37,7 +37,7 @@
   },
   {
     "key": "ctrl+shift+enter",
-    "command": "workbench.action.toggleMaximizedPanel"
+    "command": "workbench.action.terminal.new"
   },
   //intellisence traverse with vim ctrl j ctrl k
   {
