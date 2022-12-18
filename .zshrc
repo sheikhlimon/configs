@@ -11,6 +11,7 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+
 #exports
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=/usr/bin/nvim
@@ -49,6 +50,9 @@ zmodload zsh/complist
 _comp_options+=(globdots) # lets you tab complete hidden files by default
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60' #auto suggest highlight
+
+#laravel composer path
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
