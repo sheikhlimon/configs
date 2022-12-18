@@ -69,6 +69,27 @@
         ":%y+"
       ]
     },
+    //cursor in the middle with ctrl-d and ctrl-u
+    {
+      "before": [
+        "<C-d>"
+      ],
+      "after": [
+        "<C-d>",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<C-u>"
+      ],
+      "after": [
+        "<C-u>",
+        "z",
+        "z"
+      ]
+    },
     // paste yanked text for register 0
     {
       "before": [
@@ -208,7 +229,7 @@
   ],
   "window.zoomLevel": 0.7, //1.5
   "files.autoSave": "onFocusChange",
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
   "editor.fontSize": 18, //18
   "editor.fontFamily": "JetBrainsMono Nerd Font",
@@ -229,6 +250,9 @@
   // "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.renderWhitespace": "none",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -287,4 +311,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.CustomBrowser": "chrome",
+  "tabnine.experimentalAutoImports": true,
 }
