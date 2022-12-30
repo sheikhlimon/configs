@@ -101,5 +101,11 @@
   {
     "key": "ctrl+h",
     "command": "editor.action.showHover"
+  },
+  //emmet wrap
+  {
+    "key": "alt+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorHasSelection && editorTextFocus"
   }
 ]
