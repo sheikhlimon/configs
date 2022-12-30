@@ -247,7 +247,7 @@
   // "breadcrumbs.enabled": false,
   "explorer.confirmDelete": false,
   //format on save and formatter
-  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.renderWhitespace": "none",
   "editor.quickSuggestions": {
