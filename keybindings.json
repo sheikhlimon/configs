@@ -37,7 +37,7 @@
   },
   {
     "key": "ctrl+shift+enter",
-    "command": "workbench.action.toggleMaximizedPanel"
+    "command": "workbench.action.terminal.new"
   },
   //intellisence traverse with vim ctrl j ctrl k
   {
@@ -101,5 +101,11 @@
   {
     "key": "ctrl+h",
     "command": "editor.action.showHover"
+  },
+  //emmet wrap
+  {
+    "key": "alt+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorHasSelection && editorTextFocus"
   }
 ]
