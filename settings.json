@@ -227,10 +227,10 @@
       ]
     }
   ],
-  "window.zoomLevel": 0.7, //1.5
+  "window.zoomLevel": -1, //1.5
   "files.autoSave": "onFocusChange",
-  "editor.lineNumbers": "relative",
-  "workbench.startupEditor": "none",
+  //editor
+  "editor.lineNumbers": "on",
   "editor.fontSize": 18, //18
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": false,
@@ -242,7 +242,6 @@
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.linkedEditing": true,
-  "window.menuBarVisibility": "toggle",
   "security.workspace.trust.untrustedFiles": "open",
   // "breadcrumbs.enabled": false,
   "explorer.confirmDelete": false,
@@ -265,12 +264,15 @@
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
+  "[python]": {
+    "editor.formatOnType": true
+  },
   //c/c++ intellisence
-  "C_Cpp.autocomplete": "disabled",
+  // "C_Cpp.autocomplete": "disabled",
   //terminal
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontSize": 17, //16
+  "terminal.integrated.fontSize": 16, //16
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
@@ -279,36 +281,36 @@
   "terminal.integrated.showExitAlert": false,
   "terminal.integrated.rightClickBehavior": "copyPaste",
   "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.shellIntegration.enabled": true,
   //code runner
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
   "code-runner.executorMap": {
-    "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && cd $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && cppcompile $fileNameWithoutExt && rm -f $fileNameWithoutExt",
-    "python": "python3"
-    // "javascript": "node",
+    // "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && cd $dir$fileNameWithoutExt",
+    // "cpp": "cd $dir && cppcompile $fileNameWithoutExt && rm -f $fileNameWithoutExt",
+    "python": "python3",
+    // "javascript": "node"
   },
   "files.saveConflictResolution": "overwriteFileOnDisk",
   //workbench
+  "workbench.startupEditor": "none",
   "workbench.colorCustomizations": {
-    //for white theme
-    // "editorCursor.foreground": "#023020",
-    // "terminalCursor.foreground": "#023020",
-    // "editor.background": "#EEEEEC",
-    // "editor.foreground": "#2E3436"
-    //for black theme
-    "editorCursor.foreground": "#bbbaba",
-    "terminalCursor.foreground": "#bbbaba"
-  },
-  "explorer.confirmDragAndDrop": false,
-  "php.suggest.basic": false,
-  "php.validate.enable": false,
-  "emmet.excludeLanguages": [
-    "markdown",
-    "php"
-  ],
-  "workbench.iconTheme": "material-icon-theme",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.CustomBrowser": "chrome",
+  //for white theme
+  // "editorCursor.foreground": "#023020",
+  // "terminalCursor.foreground": "#023020",
+  // "editor.background": "#EEEEEC",
+  // "editor.foreground": "#2E3436"
+  //for black theme
+  "editorCursor.foreground": "#bbbaba",
+  "terminalCursor.foreground": "#bbbaba"
+},
+"explorer.confirmDragAndDrop": false,
+"emmet.excludeLanguages": [
+  "markdown",
+  "php"
+],
+"workbench.iconTheme": "material-icon-theme",
+"liveServer.settings.donotShowInfoMsg": true,
+"liveServer.settings.CustomBrowser": "chrome"
 }
