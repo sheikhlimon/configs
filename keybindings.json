@@ -66,16 +66,6 @@
     "command": "removeSecondaryCursors",
     "when": "editorHasMultipleSelections && textInputFocus"
   },
-  //display second side bar
-  {
-    "key": "alt+s",
-    "command": "workbench.action.toggleAuxiliaryBar"
-  },
-  //toggle activity bar visibility
-  {
-    "key": "alt+a",
-    "command": "workbench.action.toggleActivityBarVisibility"
-  },
   //toggle explorer
   {
     "key": "ctrl+n",
